@@ -1,0 +1,72 @@
+print("You have awoken in a dark room. Unsure of your surrounding or what brought you here, you question your sanity.")
+user_name = input("What was my name? (Enter player name) : ")
+print(f"As {user_name}'s eyes adjust to the surrounding darkness, the outline of a crude looking door emerges."
+      f" You ask yourself if you should open the door or inspect the room?")
+door_inspect = input(" Choose: open or inspect:").lower().strip()
+
+if door_inspect == "open":
+    return_open = input(
+        f"It seems as if the door had been closed for ages, releasing an unearthly whine. As {user_name} "
+        f"moves passed the doorway, they are met with a long narrow hallway. " "where am I?"" you ask."
+        "As you continue down the hallway, the door at the end opens ever so slightly. A small light"
+        " emanates from the room. Do you open the door or return from where you started? Choose (open/return): ")
+    if return_open == "open":
+        print("You go through the door, the light grows stronger and stronger. A Voice rings out asking who are you? "
+              f"well i'm {user_name}. Yes, but who is that? the voice asks. Well i'm not sure, I could only"
+              f" remember my name. Well then {user_name}, let me tell you exactly who that was. Was?! you ask."
+              f" Yes, answers the voice. Let me tell you the story... ")
+
+
+    else:
+        left_right = input('As you start to make your way back, the door behind you swings open! Bang! is all you hear'
+                           ' as the door hits the wall. You begin to run, as you do you hear loud thumping footsteps behind you. You'
+                           ' try to find the door that you entered the hallway through and are met with a fork instead. With the footsteps'
+                           ' quickly approaching do you go left or right? Choose:( left/right):').lower().strip()
+        if left_right == "left":
+            print("Not paying any attention to the darkening path, you run down the dark hallway. As you run one of your"
+                  "steps looses it's footing. a staircase? Your final thoughts as your head hits the ground "
+                  " and everything fades to black.(Game over)")
+
+        else:
+            print(
+                'As you turn the corner to  run away the footsteps, you reach a Dead End. You turn back to see what has'
+                'been producing these footsteps. Before you can make out what is in front of you, it lunges towards'
+                f'you! {user_name} has died.(Game Over)')
+
+
+
+
+else:
+    take_leave = input("As your eyes further adjust to the darkened state of the room, you start to see the decaying state of the"
+          " room around you. The walls are stained with dirt, the furniture is rotting, and cobwebs adorn every corner."
+          " In the corner of the room there is a table and a flashlight is resting on the surface.Do you take or leave "
+          "the flashlight? Choose (take/leave):"
+          ).lower().strip()
+    if take_leave == "take":
+        investigate_open = input("Feeling a bit more relaxed with a flashlight in hand. You wonder what to do next."
+                                 "Should i investigate my surroundings or go through the door? Choose (investigate/door):").lower().strip()
+        if investigate_open == "investigate":
+            print(" As you begin to take a closer look at the house you start to remember you had just pruchased this home."
+                  "You were feeling unwell due to the summer heat and must have dozed off. Back to work!")
+        else:
+            print("As you open the door you are met with a small hallway, at the end another door. You immediately open the door"
+                  "and are met with a similar hallway with a door at the end. You continue to open doors for what seems "
+                  "like an eternity. there is no end in sight. (Game Over) ")
+
+
+
+    else:
+        find_ignore = input("Deciding to leave the flashlight where it is, you begin to hear a ringing noise. Where is it"
+                            "coming from? Should i try to find the source of the ringing? Choose (find/ignore): ").lower().strip()
+        if find_ignore == "find":
+            print("the noise begins to get louder and louder. it seems to be coming from the corner of the room. You can't"
+                  "see very well, due to the surrounding darkness. You stretch out your hand and feel a cold metal embrace."
+                  " your eyes, open and you realize that the sound was your alarm clock. Was it all a dream? As you look"
+                  "down and what is supposed to be your alarm clock you find the flashlight that was on the table. "
+                  "(End of story)")
+        else:
+            print(" Your only choice left is to go through the door that you had ignored in the beginning. As you make "
+                  "your way through it you find a hallway that seems to go on forever. You start to walk and it almost"
+                  "seems that it is going on forever. As time goes on you find no end to the hallway it seems you are lost"
+                  "(Game over)")
+
